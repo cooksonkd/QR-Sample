@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MHe-wK-68G">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Scanner View Controller-->
+        <scene sceneID="SPc-Y5-sYh">
+            <objects>
+                <viewController id="MHe-wK-68G" customClass="QRScannerViewController" customModule="QR_Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VHl-Z5-dzp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No QR Code found" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNn-kY-HfH">
+                                <rect key="frame" x="135" y="94" width="144" height="20.5"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MNn-kY-HfH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="L8Y-Qf-get" secondAttribute="leading" constant="16" id="3Ma-pN-jCj"/>
+                            <constraint firstItem="MNn-kY-HfH" firstAttribute="centerX" secondItem="VHl-Z5-dzp" secondAttribute="centerX" id="9S0-8N-WIK"/>
+                            <constraint firstItem="MNn-kY-HfH" firstAttribute="top" secondItem="L8Y-Qf-get" secondAttribute="top" constant="50" id="k8w-sT-sWe"/>
+                            <constraint firstItem="L8Y-Qf-get" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="MNn-kY-HfH" secondAttribute="trailing" constant="16" id="x4k-F7-1Rc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="L8Y-Qf-get"/>
+                    </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="MNn-kY-HfH" id="bpv-RN-RJS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6H4-ed-jf7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="148"/>
+        </scene>
+    </scenes>
+</document>
